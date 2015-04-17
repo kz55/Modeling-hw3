@@ -75,7 +75,7 @@ Now that we have the most predictive variables to use from the bigrams and trigr
 
 **see: [modeling.R](https://github.com/kz55/Modeling-hw3/blob/master/modeling.R)**
 
-We being with the Ridge regression, but see that it cannot reduce coefficients to zero, and so is not useful in helping us choose a model in this case. Using a Lasso model, we find the following coefficients for bigrams:
+We begin with the Ridge regression, but see that it cannot reduce coefficients to zero, and so is not useful in helping us choose a model in this case. Using a Lasso model, we find the following coefficients for bigrams:
 ```
  (Intercept)    base.upon   claim.time  cut.medicar  energi.cost 
  0.051055727  0.479958431 -0.315666015 -0.020005518 -0.001177747 

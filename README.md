@@ -89,7 +89,7 @@ with values > 0 indicating Democratic/liberal ideology and values < 0 indicating
 
 Because the ngram selection process did not remove the most common phrases (unlike the media bias paper), many "administrative" phrases, such as "claim time", were included in the analysis. 
 
-**Still, based on the model, we see that phrases like "cut medicare" and "energy cost" are predictive of a somewhat liberal ideology.**
+**Still, based on the model, we see that phrases like "cut medicare" and "energy cost" are predictive of a somewhat conservative ideology.**
 
 
 For trigrams, the coefficients are more numerous. They include:

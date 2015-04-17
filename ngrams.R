@@ -28,8 +28,8 @@ write.csv(bigramsD, "bigramsD.csv")
 trigramsD <- NGramTokenizer(speakingD, Weka_control(min=3, max=3))
 write.csv(trigramsD, "trigramsD.csv")
 
-# Removing phrases that are not used frequently, but are not too common (such as
-# addressing the speaker, or those regarding votes).
+# Removing phrases that are not used frequently. Has the option to remove the 
+# most common phrases as well.
 
 # For Republicans
 

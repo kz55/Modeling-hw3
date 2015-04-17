@@ -39,7 +39,7 @@ Saved new csv file (`DW-NOMINATE-sm.csv`) with only `ICPSR_id` and `first_d` col
 
 Merge pre-processed Congressional speech data with DW-NOMINATE scores. To translate bioguide IDs with ICPSR IDs, downloaded `results_plus_hand_entry.csv` from https://gist.github.com/konklone/1642406, `bioguide to ICPSR.csv`. Kept only `bioguide_ID` and `ICPSR_ID` columns.
 
-**see: [merge.R](https://github.com/kz55/Capitol-words-modeling/blob/master/merge.R)**
+**see: [merge.R](https://github.com/kz55/Modeling-hw3/blob/master/merge.R)**
 
 Final csv file contains:
 columns = ideology, party, text
@@ -48,13 +48,13 @@ There is some missing data for members elected to the 113th congress
 
 ### Step 6: Extracting ngrams from Congressional speech data
 
-**see: [ngrams.R](https://github.com/kz55/Capitol-words-modeling/blob/master/ngrams.R)**
+**see: [ngrams.R](https://github.com/kz55/Modeling-hw3/blob/master/ngrams.R)**
 
 This step extracts bigrams and trigrams from Republican and Democratic speakers, then removes the most common ngrams from those list and those that are very rare.
 
 ### Step 7: Reduce terms with chi-square
 
-**see: [chisq.R](https://github.com/kz55/Capitol-words-modeling/blob/master/chisq.R)**
+**see: [chisq.R](https://github.com/kz55/Modeling-hw3/blob/master/chisq.R)**
 
 This creates a function to find chi-square values for each ngram, testing the hypothesis that Democrats and Republicans are equally as likely to use that term. This will help narrow the list of potential variables to those with the highest predictive power.
 
@@ -73,7 +73,7 @@ We now have lists of the 500 most predictive bigrams and trigrams for Republican
 
 Now that we have the most predictive variables to use from the bigrams and trigrams above, we use the glmnet package for Ridge regression, as described in ISLR. Ridge regression is very similar to least squares, except with a tuning parameter. Ridge regression has computational benefits over OLS, although unlike the Lasso model, it includes all p predictors in the final model.
 
-**see: [modeling.R](https://github.com/kz55/Capitol-words-modeling/blob/master/modeling.R)**
+**see: [modeling.R](https://github.com/kz55/Modeling-hw3/blob/master/modeling.R)**
 
 We being with the Ridge regression, but see that it cannot reduce coefficients to zero, and so is not useful in helping us choose a model in this case. Using a Lasso model, we find the following coefficients for bigrams:
 ```

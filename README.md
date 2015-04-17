@@ -60,14 +60,14 @@ This creates a function to find chi-square values for each ngram, testing the hy
 
 We now have lists of the 500 most predictive bigrams and trigrams for Republicans and Democrats, respectively:
 
-[Top 500 Republican bigrams] (https://github.com/kz55/Capitol-words-modeling/blob/master/top%20R%20bigrams.csv)
+[Top 500 Republican bigrams] (https://github.com/kz55/Modeling-hw3/blob/master/top%20R%20bigrams.csv)
 
-[Top 500 Republican trigrams] (https://github.com/kz55/Capitol-words-modeling/blob/master/top%20R%20trigrams.csv)
+[Top 500 Republican trigrams] (https://github.com/kz55/Modeling-hw3/blob/master/top%20R%20trigrams.csv)
 
 
-[Top 500 Democratic bigrams] (https://github.com/kz55/Capitol-words-modeling/blob/master/top%20D%20bigrams.csv)
+[Top 500 Democratic bigrams] (https://github.com/kz55/Modeling-hw3/blob/master/top%20D%20bigrams.csv)
 
-[Top 500 Democratic trigrams] (https://github.com/kz55/Capitol-words-modeling/blob/master/top%20D%20trigrams.csv)
+[Top 500 Democratic trigrams] (https://github.com/kz55/Modeling-hw3/blob/master/top%20D%20trigrams.csv)
 
 ### Step 8: Ridge regression and Lasso model
 

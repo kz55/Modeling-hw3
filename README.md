@@ -50,7 +50,7 @@ There is some missing data for members elected to the 113th congress
 
 **see: [ngrams.R](https://github.com/kz55/Modeling-hw3/blob/master/ngrams.R)**
 
-This step extracts bigrams and trigrams from Republican and Democratic speakers, then removes the most common ngrams from those list and those that are very rare.
+This step extracts bigrams and trigrams from Republican and Democratic speakers, removes the least common ngrams from those lists.
 
 ### Step 7: Reduce terms with chi-square
 
